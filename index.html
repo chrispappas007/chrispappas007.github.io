@@ -2,12 +2,77 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>MAP672 Portfolio Example</title>
+<title>MAP673 Portfolio Example</title>
 
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-<style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 
+<style>
+  header {
+      width: 100%;
+      min-width: 800px;
+      margin: 0 auto;
+      background: steelblue;
+      padding: 15px 0 20px;
+    }
+  h1 {
+      font-family: Dosis, sans-serif;
+      color: #375671;
+      width: 80%;
+      margin: 0 auto;
+      color: whitesmoke;
+    }
+  h2 {
+      font-family: Dosis, sans-serif;
+      color: #375671;
+      width: 80%;
+      margin: 0 auto;
+      color: whitesmoke;
+    }
+  h3 {
+        font-family: Dosis, sans-serif;
+        color: #003d71
+    }
+  p {
+        font-size: .9em;
+        color: #375671;
+    }
+  ul {
+        list-style-type: none;
+        font-size: .9em;
+        color: #375671;
+        line-height: 1.6em;
+    }
+  a, a:visited {
+        color: #003d71;
+    }
+  .project {
+        width: 80%;
+        min-width: 800px;
+        height: 100%;
+        margin: 35px auto;
+    }
+  .project:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+  .project-image {
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: left;
+        margin-right: 20px;
+        border: 2px solid #dddddd;
+    }
+
+  body {
+      background: #f5f5f5;
+      font-family: Imprima, sans-serif;
+    }
 /* CSS style rules go here! */
 
 </style>
@@ -15,7 +80,43 @@
 
 <body>
 
-    <p>Hello World! I'm going to be a portfolio page.</p>
+  <header>
+    <h1>Christina A. Pappas, MA</h1>
+    <h2>Archaeologist, GIS Specialist, Fiber Arts Nerd, Hater of Olives</h2>
+  </header>
+
+  <section class="project">
+    <a target = '_blank' href="#"><img src="images/Palymra.jpg" alt="Status of selected structures at Palmyra" class="project-image"/></a>
+    <a target = '_blank' href="#"><h3>Status of Notable Structures at Palmyra, Syria</h3></a>
+    <p>This map depicts the current status of famous structures at the ancient site of Palmyra. Palmyra has been occupied twice by the ISIS and the site has suffered greatly during this time.</p>
+    <p>This map was generated for MAP 672 at the University of Kentucky.</p>
+    <ul>
+        <li>See the map: <a target = '_blank' href="#">Status of Notable Structures at Palmyra</a></li>
+        <li>To learn more: <a target = '_blank' href="http://whc.unesco.org/en/list/23">UNESCO listing for Palmyra</a></li>
+    </ul>
+  </section>
+
+  <section class="project">
+    <a target = '_blank' href="#"><img src="images/powerplant.jpg" alt="Four types of powerplant" class="project-image"/></a>
+    <a target = '_blank' href="#"><h3>Four Types of Powerplant</h3></a>
+    <p>The choropleth map depicts four types of fuel used in US powerplants: wind, solar, hydroelectric, and petroleum. The cicle markers are scaled by the various fuel source's energy output.</p>
+    <p>This map was generated for MAP 672 at the University of Kentucky.</p>
+    <ul>
+        <li>See the map: <a target = '_blank' href="#">Four Types of Powerplant</a></li>
+        <li>To learn more: Data on the plant location, type, and output are drawn from <a target = '_blank'  href="https://www.eia.gov/">U.S. Energy Information Adminstration</a>.</li>
+    </ul>
+  </section>
+
+  <section class="project">
+    <a target = '_blank' href="#"><img src="images/homerental.jpg" alt="Average Home Rental Prices" class="project-image"/></a>
+    <a target = '_blank' href="#"><h3>Average Home Rental Prices by County</h3></a>
+    <p>This map depicts the average rental home price by county across the US.</p>
+    <p>This map was generated for MAP 672 at the University of Kentucky.</p>
+    <ul>
+        <li>See the map: <a target = '_blank' href="#">Average Home Rental Price</a></li>
+        <li>To learn more: Data produced by joining data downloaded from <a href="https://factfinder.census.gov">American FactFinder</a> with US county polygons downloaded from the <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html">US Census Cartographic Boundary Shapefiles</a>.</li>
+    </ul>
+  </section>
 
 </body>
 </html>
